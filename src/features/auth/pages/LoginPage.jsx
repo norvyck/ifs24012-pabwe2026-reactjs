@@ -27,6 +27,7 @@ export default function LoginPage() {
           <label htmlFor="login-email" className="block text-sm font-medium text-gray-700">Email</label>
           <input
             id="login-email"
+            name="email"
             type="email"
             value={email}
             onChange={onEmailChange}
@@ -38,6 +39,7 @@ export default function LoginPage() {
           <label htmlFor="login-password" className="block text-sm font-medium text-gray-700">Password</label>
           <input
             id="login-password"
+            name="password"
             type="password"
             value={password}
             onChange={onPasswordChange}

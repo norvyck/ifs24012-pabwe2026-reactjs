@@ -33,6 +33,7 @@ export default function RegisterPage() {
           <label htmlFor="reg-name" className="block text-sm font-medium text-gray-700">Nama Lengkap</label>
           <input
             id="reg-name"
+            name="name"
             type="text"
             value={name}
             onChange={onNameChange}
@@ -44,6 +45,7 @@ export default function RegisterPage() {
           <label htmlFor="reg-email" className="block text-sm font-medium text-gray-700">Email</label>
           <input
             id="reg-email"
+            name="email"
             type="email"
             value={email}
             onChange={onEmailChange}
@@ -55,6 +57,7 @@ export default function RegisterPage() {
           <label htmlFor="reg-password" className="block text-sm font-medium text-gray-700">Password</label>
           <input
             id="reg-password"
+            name="password"
             type="password"
             value={password}
             onChange={onPasswordChange}
