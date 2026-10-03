@@ -24,9 +24,9 @@ export default function LoginPage() {
       <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Masuk ke Akun Anda</h2>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
-          <label htmlFor="login-email" className="block text-sm font-medium text-gray-700">Email</label>
+          <label htmlFor="login-email-input" className="block text-sm font-medium text-gray-700">Email</label>
           <input
-            id="login-email"
+            id="login-email-input"
             name="email"
             type="email"
             value={email}
@@ -36,9 +36,9 @@ export default function LoginPage() {
           />
         </div>
         <div>
-          <label htmlFor="login-password" className="block text-sm font-medium text-gray-700">Password</label>
+          <label htmlFor="login-password-input" className="block text-sm font-medium text-gray-700">Password</label>
           <input
-            id="login-password"
+            id="login-password-input"
             name="password"
             type="password"
             value={password}
@@ -48,6 +48,7 @@ export default function LoginPage() {
           />
         </div>
         <button
+          id="login-submit-button"
           type="submit"
           disabled={loading}
           className="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 transition-colors"
